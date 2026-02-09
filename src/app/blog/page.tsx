@@ -16,7 +16,7 @@ export default function BlogPage() {
                 {blogPosts.map((post) => (
                     <article
                         key={post.id}
-                        className="flex flex-col md:flex-row gap-6 p-6 rounded-xl border border-primary/20 bg-background shadow-sm hover:shadow-md hover:border-primary/40 transition-all group"
+                        className="flex flex-col md:flex-row gap-6 p-6 rounded-xl border border-primary/30 bg-background shadow-sm hover:shadow-md hover:border-primary/40 transition-all group"
                     >
                         <div className="flex-1 space-y-3">
                             <div className="flex items-center gap-3 text-sm text-muted-foreground">
