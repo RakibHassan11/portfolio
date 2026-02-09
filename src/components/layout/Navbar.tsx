@@ -42,11 +42,6 @@ export function Navbar() {
                             {item.name}
                         </Link>
                     ))}
-                    <Button asChild size="sm">
-                        <Link href="/resume.pdf" target="_blank">
-                            Resume
-                        </Link>
-                    </Button>
                 </nav>
 
                 {/* Mobile Menu Toggle */}
@@ -78,11 +73,6 @@ export function Navbar() {
                                 {item.name}
                             </Link>
                         ))}
-                        <Button asChild size="sm" className="w-full">
-                            <Link href="/resume.pdf" target="_blank">
-                                Resume
-                            </Link>
-                        </Button>
                     </nav>
                 </div>
             )}

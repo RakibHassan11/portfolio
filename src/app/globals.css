@@ -3,22 +3,110 @@
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdfdfd;
+  /* Slightly off-white */
+  --foreground: #1a1a1a;
+  /* Dark shaded, not black */
+
+  /* Blue-600 */
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+
+  /* Zinc-100 */
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
+
+  /* Zinc-100 */
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+
+  /* Zinc-100 */
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --border: #f1f1f4;
+  /* Faded border */
+  --input: #f1f1f4;
+  --ring: #2563eb;
+
+  --radius: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0c0c0e;
+    /* Dark shaded background */
+    --foreground: #e0e0e0;
+    /* Off-white text */
+
+    /* Blue-500 */
+    --primary: #3b82f6;
+    --primary-foreground: #ffffff;
+
+    /* Zinc-800 */
+    --secondary: #242427;
+    --secondary-foreground: #fafafa;
+
+    /* Zinc-800 */
+    --muted: #242427;
+    --muted-foreground: #a1a1aa;
+
+    /* Zinc-800 */
+    --accent: #242427;
+    --accent-foreground: #fafafa;
+
+    --destructive: #7f1d1d;
+    --destructive-foreground: #fafafa;
+
+    --border: #242427;
+    --input: #242427;
+    --ring: #3b82f6;
   }
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+  font-family: "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
+}
+
+/* Utilities for border/ring if used directly with border-input etc without full tailwind config mapping in v4 sometimes needs help, but mapped above should work */
+@utility border-input {
+  border-color: var(--input);
+}
+
+@utility bg-background {
+  background-color: var(--background);
+}
+
+@utility text-foreground {
+  color: var(--foreground);
 }

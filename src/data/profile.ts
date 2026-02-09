@@ -1,33 +1,30 @@
 export const educationData = [
     {
-        degree: "Bachelor of Science in Computer Science",
-        institution: "University of Technology",
-        year: "2018 - 2022",
-    },
-    {
-        degree: "Full Stack Web Development Bootcamp",
-        institution: "Coding Academy",
-        year: "2021",
+        degree: "B.Sc. in Electronics and Communication Engineering (ECE)",
+        institution: "Khulna University, Khulna, Bangladesh",
+        year: "Jan 2020 - Feb 2025",
     },
 ];
 
 export const experienceData = [
     {
-        role: "Senior Frontend Developer",
-        company: "Tech Solutions Inc.",
-        period: "2022 - Present",
-        description: "Leading the frontend team in building scalable web applications using Next.js and React. Improved performance by 40% and implemented a new design system.",
+        role: "Software Engineer (Full Stack)",
+        company: "Anirix (Seoul, South Korea - Remote)",
+        period: "Sep 2025 - Present",
+        description: "Built full-stack e-commerce and 3D model marketplace platforms using Domain-Driven Design. Improved performance by 20% through optimization. Designed REST APIs and containerized services.",
     },
     {
-        role: "Junior Web Developer",
-        company: "Digital Agency",
-        period: "2021 - 2022",
-        description: "Collaborated with designers to translate Figma mockups into responsive websites. Integrated REST APIs and maintained legacy codebases.",
+        role: "Junior Software Engineer (Full Stack)",
+        company: "Orangetoolz (Dhaka, Bangladesh - Onsite)",
+        period: "Feb 2025 - Aug 2025",
+        description: "Implemented responsive UI features for SaaS and HRM platforms using React and TypeScript. Collaborated in Agile sprints to deliver frontend features and integrate REST APIs.",
     },
 ];
 
 export const skillsData = {
-    Frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML5", "CSS3", "JavaScript"],
-    Backend: ["Node.js", "Express", "PostgreSQL", "Prisma", "REST API", "GraphQL"],
-    Tools: ["Git", "GitHub", "VS Code", "Vercel", "Figma", "Docker"],
+    Languages: ["JavaScript", "TypeScript", "Python", "SQL", "HTML", "CSS"],
+    Frontend: ["React.js", "Next.js", "Redux Toolkit", "RTK Query", "Tailwind CSS", "ShadCN UI", "MaterialUI", "Zustand", "Framer Motion", "Three.js", "React Three Fiber"],
+    Backend: ["Node.js", "Express.js", "FastAPI", "RESTful APIs", "JWT Authentication"],
+    Database: ["PostgreSQL", "MongoDB", "Firebase (Auth, Firestore)"],
+    DevOps_Tools: ["Git", "GitHub", "Docker", "Vercel", "Nginx", "Hostinger VPS", "Postman"],
 };

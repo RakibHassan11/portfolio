@@ -23,8 +23,8 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-muted-foreground">Email</p>
-                                    <a href="mailto:hello@example.com" className="font-medium hover:text-primary">
-                                        hello@example.com
+                                    <a href="mailto:rakibhassan552@gmail.com" className="font-medium hover:text-primary">
+                                        rakibhassan552@gmail.com
                                     </a>
                                 </div>
                             </div>
@@ -34,8 +34,8 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-muted-foreground">Phone</p>
-                                    <a href="tel:+1234567890" className="font-medium hover:text-primary">
-                                        +1 (234) 567-890
+                                    <a href="tel:+8801805432865" className="font-medium hover:text-primary">
+                                        +880 1805 432865
                                     </a>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-muted-foreground">Location</p>
-                                    <p className="font-medium">San Francisco, CA</p>
+                                    <p className="font-medium">Bangladesh</p>
                                 </div>
                             </div>
                         </div>
