@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Download } from "lucide-react";
 
 export function Hero() {
@@ -13,8 +14,9 @@ export function Hero() {
                         Software Engineer
                     </h1>
                     <p className="text-xl text-muted-foreground max-w-[600px] mx-auto md:mx-0">
-                        Software Engineer with over a year of experience specializing in React and Next.js.
-                        Focused on delivering maintainable code and scalable frontend architecture.
+                        Adaptable Software Engineer with experience in full-stack development using MERN stack, Next.js, and PostgreSQL.
+                        Skilled in JavaScript frameworks, RESTful APIs, responsive design, and UI/UX. Passionate about clean, maintainable
+                        code and collaboration in agile teams. Committed to driving innovation in remote and onsite environments.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                         <Button asChild size="lg">
@@ -32,10 +34,13 @@ export function Hero() {
                 <div className="flex-1 flex justify-center">
                     <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/10">
                         <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 animate-pulse" />
-                        {/* Placeholder for profile image */}
-                        <div className="w-full h-full bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center text-muted-foreground">
-                            Profile Image
-                        </div>
+                        <Image
+                            src="/profile.jpeg"
+                            alt="Rakibul Hassan Rakib"
+                            fill
+                            className="object-cover"
+                            priority
+                        />
                     </div>
                 </div>
             </div>

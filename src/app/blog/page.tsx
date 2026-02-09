@@ -1,37 +1,14 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-
-const blogPosts = [
-    {
-        id: "1",
-        title: "Getting Started with Next.js App Router",
-        excerpt: "A comprehensive guide to understanding the new App Router in Next.js 13+.",
-        date: "February 8, 2026",
-        category: "Development",
-    },
-    {
-        id: "2",
-        title: "Why I Use Tailwind CSS for Every Project",
-        excerpt: "Exploring the benefits of utility-first CSS and how it speeds up development.",
-        date: "January 25, 2026",
-        category: "Styling",
-    },
-    {
-        id: "3",
-        title: "Building Accessible Web Applications",
-        excerpt: "Key principles and practices for creating inclusive digital experiences.",
-        date: "January 10, 2026",
-        category: "Accessibility",
-    },
-];
+import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { blogPosts } from "@/data/posts";
 
 export default function BlogPage() {
     return (
         <div className="container mx-auto px-4 md:px-6 py-12 md:py-20">
             <div className="mb-12 text-center">
-                <h1 className="text-4xl font-bold mb-4">Blog</h1>
+                <h1 className="text-4xl font-bold mb-4">Engineering Blog</h1>
                 <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                    Thoughts, tutorials, and insights on web development and design.
+                    Deep dives into software architecture, frontend performance, and full-stack challenges.
                 </p>
             </div>
 
@@ -39,17 +16,22 @@ export default function BlogPage() {
                 {blogPosts.map((post) => (
                     <article
                         key={post.id}
-                        className="flex flex-col md:flex-row gap-6 p-6 rounded-xl border bg-background shadow-sm hover:shadow-md transition-shadow"
+                        className="flex flex-col md:flex-row gap-6 p-6 rounded-xl border border-primary/20 bg-background shadow-sm hover:shadow-md hover:border-primary/40 transition-all group"
                     >
                         <div className="flex-1 space-y-3">
                             <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                                <span className="px-2 py-1 bg-secondary rounded-full font-medium text-secondary-foreground">
+                                <span className="px-2 py-1 bg-secondary rounded-full font-medium text-secondary-foreground text-xs">
                                     {post.category}
                                 </span>
-                                <span>{post.date}</span>
+                                <span className="flex items-center gap-1">
+                                    <Calendar className="h-3 w-3" /> {post.date}
+                                </span>
+                                <span className="flex items-center gap-1">
+                                    <Clock className="h-3 w-3" /> {post.readTime}
+                                </span>
                             </div>
                             <h2 className="text-2xl font-bold">
-                                <Link href={`/blog/${post.id}`} className="hover:text-primary transition-colors">
+                                <Link href={`/blog/${post.id}`} className="group-hover:text-primary transition-colors">
                                     {post.title}
                                 </Link>
                             </h2>

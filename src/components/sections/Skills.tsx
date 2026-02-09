@@ -2,45 +2,7 @@
 
 import { skillsData } from "@/data/profile";
 import Image from "next/image";
-
-// Helper for mapping skill names to Simple Icons slugs
-const getIconSlug = (skill: string) => {
-    const map: Record<string, string> = {
-        "React.js": "react",
-        "Next.js": "nextdotjs",
-        "Redux Toolkit": "redux",
-        "RTK Query": "redux",
-        "Tailwind CSS": "tailwindcss",
-        "ShadCN UI": "shadcnui",
-        "MaterialUI": "mui",
-        "Zustand": "react", // No icon, fallback
-        "Framer Motion": "framer",
-        "Three.js": "threedotjs",
-        "React Three Fiber": "react", // Fallback
-        "Node.js": "nodedotjs",
-        "Express.js": "express",
-        "FastAPI": "fastapi",
-        "RESTful APIs": "json", // Generic
-        "JWT Authentication": "jsonwebtokens",
-        "PostgreSQL": "postgresql",
-        "MongoDB": "mongodb",
-        "Firebase (Auth, Firestore)": "firebase",
-        "Git": "git",
-        "GitHub": "github",
-        "Docker": "docker",
-        "Vercel": "vercel",
-        "Nginx": "nginx",
-        "Hostinger VPS": "hostinger",
-        "Postman": "postman",
-        "JavaScript": "javascript",
-        "TypeScript": "typescript",
-        "Python": "python",
-        "SQL": "mysql", // Generic SQL icon
-        "HTML": "html5",
-        "CSS": "css3",
-    };
-    return map[skill] || skill.toLowerCase().replace(/[^a-z0-9]/g, "");
-};
+import { getIconSlug } from "@/lib/utils";
 
 export function Skills() {
     return (
@@ -49,7 +11,7 @@ export function Skills() {
                 <h2 className="text-3xl font-bold mb-12 text-center text-primary">Skills & Technologies</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     {Object.entries(skillsData).map(([category, skills]) => (
-                        <div key={category} className="bg-background rounded-xl p-6 shadow-sm border hover:border-primary/20 transition-colors">
+                        <div key={category} className="bg-background rounded-xl p-6 shadow-sm border border-primary/20 hover:border-primary/40 transition-colors">
                             <h3 className="text-xl font-bold mb-6 border-b pb-2">{category}</h3>
                             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                                 {skills.map((skill) => {

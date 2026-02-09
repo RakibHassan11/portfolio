@@ -52,9 +52,9 @@
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
 
-  --border: #f1f1f4;
-  /* Faded border */
-  --input: #f1f1f4;
+  /* Zinc-300 for distinct visibility */
+  --border: #d4d4d8;
+  --input: #d4d4d8;
   --ring: #2563eb;
 
   --radius: 0.5rem;

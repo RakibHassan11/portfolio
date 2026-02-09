@@ -15,10 +15,10 @@ export const projects: Project[] = [
         id: "shirshoo",
         title: "Shirshoo: AI-Enhanced EdTech Platform",
         description: "A scalable EdTech platform with MCQs, AI discussions, and live exams with real-time leaderboards.",
-        image: "/projects/shirshoo.jpg", // Placeholder
+        image: "/shirsho4.png",
         technologies: ["React", "Next.js", "TypeScript", "Node.js", "MongoDB", "Socket.io", "Google Gemini SDK"],
         link: "https://www.shirshoo.com",
-        github: "https://github.com/RakibHassan11", // Standard fallback as per CV header
+        github: "https://github.com/RakibHassan11",
         features: [
             "Admin PDF-to-question extraction",
             "Live exams with real-time leaderboards using WebSockets",
@@ -32,7 +32,7 @@ export const projects: Project[] = [
         id: "hrm-system",
         title: "HRM System (Orangetoolz)",
         description: "Human Resource Management Platform for attendance, leave management, and role-based access.",
-        image: "/projects/hrm.jpg", // Placeholder
+        image: "/hrm.jpg",
         technologies: ["React.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "Node.js", "PostgreSQL"],
         link: "https://hrm.orangetoolz.com",
         github: "https://github.com/RakibHassan11",
@@ -49,7 +49,7 @@ export const projects: Project[] = [
         id: "anirix-3d",
         title: "Anirix 3D Engine",
         description: "Interactive web-based 3D viewer for smooth visualization of complex assets.",
-        image: "/projects/anirix.jpg", // Placeholder
+        image: "/3d.png",
         technologies: ["React", "Next.js", "TypeScript", "Three.js", "React Three Fiber", "Zustand"],
         link: "https://anirix-3d-engine.vercel.app/en/workbench",
         github: "https://github.com/RakibHassan11",
